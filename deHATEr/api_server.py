@@ -63,11 +63,16 @@ def predict(request: PredictRequest) -> PredictResponse:
         raise HTTPException(status_code=503, detail="Model not ready")
 
     try:
+        print(
+            f"[debug] /predict input: text={request.text!r}, age={request.age}",
+            flush=True,
+        )
         result = classifier.classify(request.text, request.age)
     except Exception as exc:  # pragma: no cover - defensive
         logger.exception("Model inference failed")
         raise HTTPException(status_code=500, detail=str(exc)) from exc
 
+    print(f"[debug] /predict output: {result}", flush=True)
     return PredictResponse(**result)
 
 
