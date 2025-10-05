@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>4j3k AI Content Filter Settings</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        margin: 24px;
+        max-width: 520px;
+      }
+      label {
+        display: block;
+        margin-bottom: 12px;
+      }
+      input[type="text"],
+      input[type="number"] {
+        width: 100%;
+        padding: 8px;
+        margin-top: 4px;
+        box-sizing: border-box;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+      }
+      button {
+        background: #1971c2;
+        color: #fff;
+        border: none;
+        padding: 10px 16px;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #1864ab;
+      }
+      .status {
+        margin-top: 16px;
+        min-height: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Settings</h1>
+    <form id="settings-form">
+      <label>
+        API Base URL
+        <input type="text" id="api-base-url" placeholder="http://127.0.0.1:8000" required />
+      </label>
+      <label>
+        User Age (optional)
+        <input type="number" id="user-age" min="0" max="130" placeholder="Leave blank to ignore" />
+      </label>
+      <button type="submit">Save</button>
+    </form>
+    <div class="status" id="status" role="status"></div>
+    <script src="options.js"></script>
+  </body>
+</html>
