@@ -1,0 +1,65 @@
+# Environment directories
+deHATEr/venv/
+deHATEr/windows_venv/
+deHATEr/.venv/
+deHATEr/env/
+deHATEr/ENV/
+deHATEr/env.bak/
+deHATEr/venv.bak/
+
+# Python caches and compiled files
+deHATEr/__pycache__/
+deHATEr/*.py[cod]
+deHATEr/*$py.class
+
+# IDE and editor settings
+.vscode/
+.idea/
+*.code-workspace
+
+# Distribution / packaging
+build/
+dist/
+.eggs/
+*.egg-info/
+*.egg
+pip-wheel-metadata/
+
+# Logs and coverage reports
+*.log
+pip-log.txt
+pip-delete-this-directory.txt
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache/
+pytest_debug.log
+.pytest_cache/
+coverage.xml
+nosetests.xml
+
+# Type checker caches
+.mypy_cache/
+.pyre/
+.pytype/
+.ruff_cache/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Model artifacts
+deHATEr/models/*
+deHATEr/*.safetensors
+deHATEr/*.pt
+deHATEr/*.bin
+
+# Operating system cruft
+deHATEr/.DS_Store
+deHATEr/Thumbs.db
+
+# Local configuration
+deHATEr/.python-version
+deHATEr/.env
+deHATEr/*.env
