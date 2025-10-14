@@ -13,9 +13,11 @@ class AgePolicy:
 
 
 _DEFAULT_POLICIES = (
-    AgePolicy(max_age=12, threshold=0.25, allow_unblock=False),
-    AgePolicy(max_age=17, threshold=0.35, allow_unblock=True),
-    AgePolicy(max_age=200, threshold=0.55, allow_unblock=True),
+    AgePolicy(max_age=12, threshold=0.20, allow_unblock=False),   # children
+    AgePolicy(max_age=17, threshold=0.30, allow_unblock=True),    # teens
+    AgePolicy(max_age=26, threshold=0.40, allow_unblock=True),    # young adults
+    AgePolicy(max_age=50, threshold=0.55, allow_unblock=True),    # adults
+    AgePolicy(max_age=200, threshold=0.45, allow_unblock=True),   # older adults
 )
 
 
